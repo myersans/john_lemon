@@ -8798,10 +8798,25 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1543728988193787987, guid: 2e083ce79624a4fe09eb5cef9aed79ce,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4826523101293223257, guid: 2e083ce79624a4fe09eb5cef9aed79ce,
         type: 3}
       propertyPath: m_Name
       value: Bonfire_D_to_Cook (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6509619727449846323, guid: 2e083ce79624a4fe09eb5cef9aed79ce,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6509619727449846323, guid: 2e083ce79624a4fe09eb5cef9aed79ce,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7028253062857378311, guid: 2e083ce79624a4fe09eb5cef9aed79ce,
         type: 3}
@@ -9136,10 +9151,35 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 470398447936629102, guid: 2e083ce79624a4fe09eb5cef9aed79ce,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 470398447936629102, guid: 2e083ce79624a4fe09eb5cef9aed79ce,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1543728988193787987, guid: 2e083ce79624a4fe09eb5cef9aed79ce,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4826523101293223257, guid: 2e083ce79624a4fe09eb5cef9aed79ce,
         type: 3}
       propertyPath: m_Name
       value: Bonfire_D_to_Cook
+      objectReference: {fileID: 0}
+    - target: {fileID: 6509619727449846323, guid: 2e083ce79624a4fe09eb5cef9aed79ce,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6509619727449846323, guid: 2e083ce79624a4fe09eb5cef9aed79ce,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7028253062857378311, guid: 2e083ce79624a4fe09eb5cef9aed79ce,
         type: 3}
@@ -15475,10 +15515,25 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1543728988193787987, guid: 2e083ce79624a4fe09eb5cef9aed79ce,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4826523101293223257, guid: 2e083ce79624a4fe09eb5cef9aed79ce,
         type: 3}
       propertyPath: m_Name
       value: Bonfire_D_to_Cook (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6509619727449846323, guid: 2e083ce79624a4fe09eb5cef9aed79ce,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6509619727449846323, guid: 2e083ce79624a4fe09eb5cef9aed79ce,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7028253062857378311, guid: 2e083ce79624a4fe09eb5cef9aed79ce,
         type: 3}
