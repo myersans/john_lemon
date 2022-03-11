@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 1432137249}
   - component: {fileID: 1432137248}
   m_Layer: 5
-  m_Name: ExitImage
+  m_Name: CaughtImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
