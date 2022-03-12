@@ -544,7 +544,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1087054558 stripped
 Transform:
@@ -623,7 +623,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2042017481}
     m_Modifications:
     - target: {fileID: 1894086014924284540, guid: 66387a8ea11b4f34195a15e0db99243a,
         type: 3}
@@ -633,22 +633,22 @@ PrefabInstance:
     - target: {fileID: 1894086014924717660, guid: 66387a8ea11b4f34195a15e0db99243a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1894086014924717660, guid: 66387a8ea11b4f34195a15e0db99243a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.2
+      value: -46.282562
       objectReference: {fileID: 0}
     - target: {fileID: 1894086014924717660, guid: 66387a8ea11b4f34195a15e0db99243a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 34.29264
       objectReference: {fileID: 0}
     - target: {fileID: 1894086014924717660, guid: 66387a8ea11b4f34195a15e0db99243a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 72.59718
       objectReference: {fileID: 0}
     - target: {fileID: 1894086014924717660, guid: 66387a8ea11b4f34195a15e0db99243a,
         type: 3}
@@ -658,17 +658,17 @@ PrefabInstance:
     - target: {fileID: 1894086014924717660, guid: 66387a8ea11b4f34195a15e0db99243a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1894086014924717660, guid: 66387a8ea11b4f34195a15e0db99243a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1894086014924717660, guid: 66387a8ea11b4f34195a15e0db99243a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1894086014924717660, guid: 66387a8ea11b4f34195a15e0db99243a,
         type: 3}
@@ -1411,6 +1411,43 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2002578667}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &2003408319 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1894086014924717660, guid: 66387a8ea11b4f34195a15e0db99243a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1278981714}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2042017480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2042017481}
+  m_Layer: 0
+  m_Name: Ghosts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2042017481
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042017480}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 37.08256, y: -34.29264, z: -72.59718}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2003408319}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &164622884615467954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1487,6 +1524,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513704322714434218, guid: 289ccda598178804582f5829644e46d6,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513704322714434218, guid: 289ccda598178804582f5829644e46d6,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3316794132211568067, guid: 289ccda598178804582f5829644e46d6,
         type: 3}
