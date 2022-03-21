@@ -75,5 +75,10 @@ public class PlayerMovement : MonoBehaviour
 		{
 			other.gameObject.SetActive(false);		
 		}
+
+        if (other.gameObject.CompareTag("Heart"))
+		{
+			other.gameObject.SetActive(false);		
+		}
     }
 }
