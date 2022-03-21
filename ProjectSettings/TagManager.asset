@@ -11,6 +11,7 @@ TagManager:
   - Star
   - Heart
   - Cubie
+  - Sphere
   layers:
   - Default
   - TransparentFX
