@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float turnSpeed = 20f;
-
+    
     Animator m_Animator;
     Rigidbody m_Rigidbody;
     AudioSource m_AudioSource;
@@ -67,6 +67,11 @@ public class PlayerMovement : MonoBehaviour
 		}
 
         if (other.gameObject.CompareTag("Brown"))
+		{
+			other.gameObject.SetActive(false);		
+		}
+
+        if (other.gameObject.CompareTag("Star"))
 		{
 			other.gameObject.SetActive(false);		
 		}
