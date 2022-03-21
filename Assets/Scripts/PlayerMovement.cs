@@ -80,5 +80,10 @@ public class PlayerMovement : MonoBehaviour
 		{
 			other.gameObject.SetActive(false);		
 		}
+
+        if (other.gameObject.CompareTag("Cubie"))
+		{
+			other.gameObject.SetActive(false);		
+		}
     }
 }
