@@ -53,4 +53,22 @@ public class PlayerMovement : MonoBehaviour
         m_Rigidbody.MovePosition (m_Rigidbody.position + m_Movement * m_Animator.deltaPosition.magnitude);
         m_Rigidbody.MoveRotation (m_Rotation);
     }
+
+    private void OnTriggerEnter(Collider other) 
+	{
+		if (other.gameObject.CompareTag("Yellow"))
+		{
+			other.gameObject.SetActive(false);		
+		}
+
+        if (other.gameObject.CompareTag("Orange"))
+		{
+			other.gameObject.SetActive(false);		
+		}
+
+        if (other.gameObject.CompareTag("Brown"))
+		{
+			other.gameObject.SetActive(false);		
+		}
+    }
 }
