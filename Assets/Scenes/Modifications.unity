@@ -408,7 +408,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &32463798 stripped
@@ -693,7 +693,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &52235739 stripped
@@ -981,7 +981,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &126724139 stripped
@@ -1101,7 +1101,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &127231069 stripped
@@ -2828,7 +2828,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &384042626 stripped
@@ -2948,7 +2948,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &400298260 stripped
@@ -4591,7 +4591,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &727474700 stripped
@@ -5203,7 +5203,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &796840120 stripped
@@ -5221,7 +5221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 822926985}
-  - component: {fileID: 822926984}
+  - component: {fileID: 822926986}
   m_Layer: 0
   m_Name: GameEnding
   m_TagString: Untagged
@@ -5229,7 +5229,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &822926984
+--- !u!4 &822926985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822926983}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.075361, y: 2.1604774, z: 2.423901}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &822926986
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5248,20 +5262,6 @@ MonoBehaviour:
   exitAudio: {fileID: 1129577854}
   caughtBackgroundImageCanvasGroup: {fileID: 1952542409}
   caughtAudio: {fileID: 512885266}
---- !u!4 &822926985
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 822926983}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.075361, y: 2.1604774, z: 2.423901}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &827909980
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5368,7 +5368,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &827909981 stripped
@@ -5538,7 +5538,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &837537933 stripped
@@ -6724,7 +6724,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &1010439647 stripped
@@ -7037,7 +7037,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &1033447669 stripped
@@ -9037,7 +9037,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &1260142403 stripped
@@ -9257,7 +9257,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!1 &1281815510
@@ -13354,7 +13354,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &1839211731 stripped
@@ -13749,7 +13749,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &1861550987 stripped
@@ -15591,7 +15591,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &2094818520 stripped
@@ -15801,7 +15801,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 822926984}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &2101742535 stripped
