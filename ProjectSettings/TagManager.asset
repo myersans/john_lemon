@@ -13,6 +13,7 @@ TagManager:
   - Cubie
   - Sphere
   - Hexagon
+  - Diamond
   layers:
   - Default
   - TransparentFX
