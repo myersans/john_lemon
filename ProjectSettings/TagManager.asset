@@ -12,6 +12,7 @@ TagManager:
   - Heart
   - Cubie
   - Sphere
+  - Hexagon
   layers:
   - Default
   - TransparentFX
