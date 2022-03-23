@@ -408,7 +408,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 822926984}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &32463798 stripped
@@ -693,7 +693,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 822926984}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &52235739 stripped
@@ -5203,7 +5203,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 822926984}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &796840120 stripped
@@ -5222,6 +5222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 822926985}
   - component: {fileID: 822926986}
+  - component: {fileID: 822926984}
   m_Layer: 0
   m_Name: GameEnding
   m_TagString: Untagged
@@ -5229,6 +5230,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &822926984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822926983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7a9d2f9f45431409657499918538e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 1
+  displayImageDuration: 1
+  player: {fileID: 2002578668}
+  exitBackgroundImageCanvasGroup: {fileID: 1624804728}
+  exitAudio: {fileID: 1129577854}
+  caughtBackgroundImageCanvasGroup: {fileID: 1952542409}
+  caughtAudio: {fileID: 512885266}
 --- !u!4 &822926985
 Transform:
   m_ObjectHideFlags: 0
@@ -5237,7 +5257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822926983}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.075361, y: 2.1604774, z: 2.423901}
+  m_LocalPosition: {x: -10.075361, y: 7.21, z: 2.423901}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5250,18 +5270,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822926983}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 726d8e58c4df15344a2204d4b83bb6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fadeDuration: 1
   displayImageDuration: 1
-  player: {fileID: 2002578668}
-  exitBackgroundImageCanvasGroup: {fileID: 1624804728}
-  exitAudio: {fileID: 1129577854}
-  caughtBackgroundImageCanvasGroup: {fileID: 1952542409}
-  caughtAudio: {fileID: 512885266}
+  player: {fileID: 0}
+  exitBackgroundImageCanvasGroup: {fileID: 0}
+  exitAudio: {fileID: 0}
+  caughtBackgroundImageCanvasGroup: {fileID: 0}
+  caughtAudio: {fileID: 0}
 --- !u!1001 &827909980
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6724,7 +6744,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 822926984}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &1010439647 stripped
@@ -7482,7 +7502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1120697998}
   m_Layer: 0
-  m_Name: Points
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9037,7 +9057,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 822926984}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &1260142403 stripped
@@ -9257,6 +9277,11 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
+      objectReference: {fileID: 822926984}
+    - target: {fileID: 8202854246319186871, guid: 66387a8ea11b4f34195a15e0db99243a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
@@ -13354,7 +13379,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameEnding
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 822926984}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66387a8ea11b4f34195a15e0db99243a, type: 3}
 --- !u!4 &1839211731 stripped

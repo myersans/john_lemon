@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float turnSpeed = 20f;
+    private float speed = 50f;
     
     Animator m_Animator;
     Rigidbody m_Rigidbody;
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         
         m_Movement.Set(horizontal, 0f, vertical);
         m_Movement.Normalize ();
+        m_Movement = m_Movement * speed * Time.deltaTime;
 
         bool hasHorizontalInput = !Mathf.Approximately (horizontal, 0f);
         bool hasVerticalInput = !Mathf.Approximately (vertical, 0f);
@@ -54,12 +56,32 @@ public class PlayerMovement : MonoBehaviour
         m_Rigidbody.MoveRotation (m_Rotation);
     }
 
+    private void speed_change ()
+    {
+        speed = 50f;
+    }
+
     private void OnTriggerEnter(Collider other) 
 	{
-		if (other.gameObject.CompareTag("Yellow"))
-		{
-			other.gameObject.SetActive(false);		
-		}
+        switch(other.gameObject.tag)
+        {
+            case "Yellow":
+                other.gameObject.SetActive(false);
+                speed += speed;
+                Invoke("speed_change", 10);
+                break;
+
+
+        }
+
+
+
+		//if (other.gameObject.CompareTag("Yellow"))
+		//{
+			//other.gameObject.SetActive(false);
+            //speed += speed;
+            //Invoke("speed_change", 10); 
+		//}
 
         if (other.gameObject.CompareTag("Orange"))
 		{
