@@ -8,10 +8,13 @@ public class PlayerMovement : MonoBehaviour
     public float turnSpeed = 20f;
     private float speed = 50f;
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI shroomCountText;
+    public TextMeshProUGUI controlsText;
     
     Animator m_Animator;
     Rigidbody m_Rigidbody;
     private int score;
+    private int shroomCount;
     AudioSource m_AudioSource;
     Vector3 m_Movement;
     Quaternion m_Rotation = Quaternion.identity;
@@ -22,8 +25,11 @@ public class PlayerMovement : MonoBehaviour
         m_Rigidbody = GetComponent<Rigidbody> ();
         m_AudioSource = GetComponent<AudioSource> ();
         score = 0;
+        shroomCount = 15;
 
         SetScoreText();
+        SetShroomCountText ();
+        SetControlsText ();
     }
 
     void FixedUpdate ()
@@ -61,6 +67,16 @@ public class PlayerMovement : MonoBehaviour
         scoreText.text = "Score: " + score.ToString();
     }
 
+    void SetShroomCountText ()
+    {
+        shroomCountText.text = "Shrooms: " + shroomCount.ToString();
+    }
+
+    void SetControlsText ()
+    {
+        controlsText.text = " Controls\n     W\n   A    S\n      D";
+    }
+
     void OnAnimatorMove ()
     {
         m_Rigidbody.MovePosition (m_Rigidbody.position + m_Movement * m_Animator.deltaPosition.magnitude);
@@ -78,18 +94,24 @@ public class PlayerMovement : MonoBehaviour
         {
             case "Yellow":
                 other.gameObject.SetActive(false);
+                shroomCount = shroomCount - 1;
+                SetShroomCountText ();
                 speed += speed;
                 Invoke("speed_change", 10);
                 break;
 
             case "Orange":
                 other.gameObject.SetActive(false);
+                shroomCount = shroomCount - 1;
+                SetShroomCountText ();
                 speed = speed - 40f;
                 Invoke("speed_change", 10);
                 break;
 
             case "Brown":
                 other.gameObject.SetActive(false);
+                shroomCount = shroomCount - 1;
+                SetShroomCountText ();
                 float[] randSpeed = {10f, 50f, 100f};
                 speed = randSpeed[Random.Range(0,randSpeed.Length)];
                 Invoke("speed_change", 10);
