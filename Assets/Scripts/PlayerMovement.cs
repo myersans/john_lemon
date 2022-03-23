@@ -81,9 +81,9 @@ public class PlayerMovement : MonoBehaviour
 
             case "Brown":
                 other.gameObject.SetActive(false);
-                //int[] randSpeed = {10f, 50f, 100f};
-                //speed = randSpeed[Random.Range(0,randSpeed.Length)];
-                //Invoke("speed_change", 10);
+                float[] randSpeed = {10f, 50f, 100f};
+                speed = randSpeed[Random.Range(0,randSpeed.Length)];
+                Invoke("speed_change", 10);
                 break;
 
             case "Star":
