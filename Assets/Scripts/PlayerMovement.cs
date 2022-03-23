@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
     public float turnSpeed = 20f;
     private float speed = 50f;
+    public TextMeshProUGUI scoreText;
     
     Animator m_Animator;
     Rigidbody m_Rigidbody;
@@ -20,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
         m_Rigidbody = GetComponent<Rigidbody> ();
         m_AudioSource = GetComponent<AudioSource> ();
         score = 0;
+
+        SetScoreText();
     }
 
     void FixedUpdate ()
@@ -50,6 +54,11 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 desiredForward = Vector3.RotateTowards (transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
         m_Rotation = Quaternion.LookRotation (desiredForward);
+    }
+
+    void SetScoreText ()
+    {
+        scoreText.text = "Score: " + score.ToString();
     }
 
     void OnAnimatorMove ()
@@ -89,31 +98,37 @@ public class PlayerMovement : MonoBehaviour
             case "Star":
                 other.gameObject.SetActive(false);
                 score = score + 15;
+                SetScoreText();
                 break;
 
             case "Heart":
                 other.gameObject.SetActive(false);
                 score = score + 50;
+                SetScoreText();
                 break;
 
             case "Cubie":
                 other.gameObject.SetActive(false);
                 score = score + 20;
+                SetScoreText();
                 break;
 
             case "Sphere":
                 other.gameObject.SetActive(false);
                 score = score + 100;
+                SetScoreText();
                 break;
 
             case "Hexagon":
                 other.gameObject.SetActive(false);
                 score = score + 30;
+                SetScoreText();
                 break;
 
             case "Diamond":
                 other.gameObject.SetActive(false);
                 score = score + 10;
+                SetScoreText();
                 break;
         }
     }
