@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     
     Animator m_Animator;
     Rigidbody m_Rigidbody;
+    private int score;
     AudioSource m_AudioSource;
     Vector3 m_Movement;
     Quaternion m_Rotation = Quaternion.identity;
@@ -18,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
         m_Animator = GetComponent<Animator> ();
         m_Rigidbody = GetComponent<Rigidbody> ();
         m_AudioSource = GetComponent<AudioSource> ();
+        score = 0;
     }
 
     void FixedUpdate ()
@@ -71,56 +73,48 @@ public class PlayerMovement : MonoBehaviour
                 Invoke("speed_change", 10);
                 break;
 
+            case "Orange":
+                other.gameObject.SetActive(false);
+                speed = speed - 40f;
+                Invoke("speed_change", 10);
+                break;
 
+            case "Brown":
+                other.gameObject.SetActive(false);
+                //int[] randSpeed = {10f, 50f, 100f};
+                //speed = randSpeed[Random.Range(0,randSpeed.Length)];
+                //Invoke("speed_change", 10);
+                break;
+
+            case "Star":
+                other.gameObject.SetActive(false);
+                score = score + 15;
+                break;
+
+            case "Heart":
+                other.gameObject.SetActive(false);
+                score = score + 50;
+                break;
+
+            case "Cubie":
+                other.gameObject.SetActive(false);
+                score = score + 20;
+                break;
+
+            case "Sphere":
+                other.gameObject.SetActive(false);
+                score = score + 100;
+                break;
+
+            case "Hexagon":
+                other.gameObject.SetActive(false);
+                score = score + 30;
+                break;
+
+            case "Diamond":
+                other.gameObject.SetActive(false);
+                score = score + 10;
+                break;
         }
-
-
-
-		//if (other.gameObject.CompareTag("Yellow"))
-		//{
-			//other.gameObject.SetActive(false);
-            //speed += speed;
-            //Invoke("speed_change", 10); 
-		//}
-
-        if (other.gameObject.CompareTag("Orange"))
-		{
-			other.gameObject.SetActive(false);		
-		}
-
-        if (other.gameObject.CompareTag("Brown"))
-		{
-			other.gameObject.SetActive(false);		
-		}
-
-        if (other.gameObject.CompareTag("Star"))
-		{
-			other.gameObject.SetActive(false);		
-		}
-
-        if (other.gameObject.CompareTag("Heart"))
-		{
-			other.gameObject.SetActive(false);		
-		}
-
-        if (other.gameObject.CompareTag("Cubie"))
-		{
-			other.gameObject.SetActive(false);		
-		}
-
-        if (other.gameObject.CompareTag("Sphere"))
-		{
-			other.gameObject.SetActive(false);		
-		}
-
-        if (other.gameObject.CompareTag("Hexagon"))
-		{
-			other.gameObject.SetActive(false);		
-		}
-
-        if (other.gameObject.CompareTag("Diamond"))
-		{
-			other.gameObject.SetActive(false);		
-		}
     }
 }
