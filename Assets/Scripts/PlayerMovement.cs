@@ -13,8 +13,10 @@ public class PlayerMovement : MonoBehaviour
     
     Animator m_Animator;
     Rigidbody m_Rigidbody;
-    private int score;
+
+    public int score;
     private int shroomCount;
+
     AudioSource m_AudioSource;
     Vector3 m_Movement;
     Quaternion m_Rotation = Quaternion.identity;

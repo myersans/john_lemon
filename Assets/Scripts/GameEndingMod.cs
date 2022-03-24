@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameEndingMod : MonoBehaviour
 {
@@ -13,9 +15,20 @@ public class GameEndingMod : MonoBehaviour
     public CanvasGroup caughtBackgroundImageCanvasGroup;
     public AudioSource caughtAudio;
 
+    public float timeRemaining = 10;
+    public bool timerIsRunning = false;
+    public TextMeshProUGUI timeText;
+
+
     bool m_IsPlayerCaught;
     float m_Timer;
     bool m_HasAudioPlayed;
+
+    private void Start ()
+    {
+        timerIsRunning = true;
+        DisplayTime(timeRemaining);
+    }
 
     public void CaughtPlayer ()
     {
@@ -24,9 +37,24 @@ public class GameEndingMod : MonoBehaviour
 
     void Update ()
     {
-        if (m_IsPlayerCaught)
+        if (timerIsRunning)
         {
-            EndLevel (caughtBackgroundImageCanvasGroup, true, caughtAudio);
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+                DisplayTime(timeRemaining);
+                if (m_IsPlayerCaught)
+                {
+                    EndLevel (caughtBackgroundImageCanvasGroup, true, caughtAudio);
+                }  
+            }
+            else
+            {
+                timeRemaining = 0;
+                timerIsRunning = false;
+                EndLevel (exitBackgroundImageCanvasGroup, false, exitAudio);
+            }
+
         }
     }
 
@@ -52,5 +80,14 @@ public class GameEndingMod : MonoBehaviour
                 Application.Quit ();
             }
         }
+    }
+
+    void DisplayTime(float timeToDisplay)
+    {
+        timeToDisplay += 1;
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60); 
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+        timeText.text = "Time Remaining: " + string.Format("{0:00}:{1:00}", minutes, seconds);
+
     }
 }
