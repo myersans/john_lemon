@@ -5650,7 +5650,7 @@ MonoBehaviour:
   exitAudio: {fileID: 1129577854}
   caughtBackgroundImageCanvasGroup: {fileID: 1952542409}
   caughtAudio: {fileID: 512885266}
-  timeRemaining: 15
+  timeRemaining: 300
   timerIsRunning: 1
   timeText: {fileID: 1006628666}
 --- !u!4 &822926985
@@ -15393,6 +15393,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4139048961998205960, guid: efb23f03587014144bab1bcef1d8e236,
+        type: 3}
+      propertyPath: score
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4139048961998205960, guid: efb23f03587014144bab1bcef1d8e236,
         type: 3}
       propertyPath: m_Enabled

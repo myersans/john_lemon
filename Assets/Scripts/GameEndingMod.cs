@@ -50,9 +50,22 @@ public class GameEndingMod : MonoBehaviour
             }
             else
             {
-                timeRemaining = 0;
-                timerIsRunning = false;
-                EndLevel (exitBackgroundImageCanvasGroup, false, exitAudio);
+                
+                if (player.GetComponent<PlayerMovement>().score >= 1152)
+                {
+                    timeRemaining = 0;
+                    timerIsRunning = false;
+                    EndLevel (exitBackgroundImageCanvasGroup, false, exitAudio);
+                }
+                else 
+                {
+                    timeRemaining = 0;
+                    timerIsRunning = false;
+                    EndLevel (caughtBackgroundImageCanvasGroup, true, caughtAudio);
+                }
+                
+                
+                
             }
 
         }
