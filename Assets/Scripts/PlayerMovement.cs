@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         m_Animator = GetComponent<Animator> ();
         m_Rigidbody = GetComponent<Rigidbody> ();
         m_AudioSource = GetComponent<AudioSource> ();
-        score = 1152;
+        score = 0;
         shroomCount = 15;
 
         SetScoreText();
